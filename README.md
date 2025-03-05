@@ -13,3 +13,7 @@ docker compose up -d --build
 
 1. http://localhost:6868/api/devices
 2. http://localhost:6868/api/categories
+
+### Swagger docs
+
+1. http://localhost:6868/api-docs
