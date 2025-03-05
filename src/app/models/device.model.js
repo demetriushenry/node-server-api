@@ -1,4 +1,4 @@
-export default (sequelize, Sequelize) => {
+module.exports = (sequelize, Sequelize) => {
   const Device = sequelize.define('device', {
     id: {
       type: Sequelize.INTEGER.UNSIGNED,

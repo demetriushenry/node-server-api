@@ -1,4 +1,4 @@
-export default (sequelize, Sequelize) => {
+module.exports = (sequelize, Sequelize) => {
   const Category = sequelize.define("category", {
     id: {
       type: Sequelize.BIGINT(20),
@@ -8,7 +8,7 @@ export default (sequelize, Sequelize) => {
     name: {
       type: Sequelize.STRING(128),
       validate: {
-        notNull: true,
+        allowNull: false,
         notEmpty: true,
         max: 128,
       },

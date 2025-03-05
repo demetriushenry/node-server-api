@@ -1,5 +1,4 @@
-import { db } from "../models";
-
+const db = require("../models");
 const Device = db.devices;
 const Op = db.Sequelize.Op;
 
@@ -48,7 +47,7 @@ exports.findAll = (req, res) => {
 };
 
 exports.findOne = (req, res) => {
-  const id = req.query.id;
+  const id = req.params.id;
 
   Device.findByPk(id)
     .then((data) => {
